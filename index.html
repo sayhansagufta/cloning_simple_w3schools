@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Sidebar Hyperlink Javascript</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <aside class="sidebar">
+        <h2>Js Documentation</h2>
+        <nav>
+          <ul>
+            <li><a href="#introduction">Js Introduction</a></li>
+            <li><a href="#syntax">JS Syntax</a></li>
+            <li><a href="#variables">JS Variables</a></li>
+            <li><a href="#comments">JS Comments</a></li>
+            <li><a href="#operators">JS Operators</a></li>
+            <li><a href="#arithmetics">JS Arithmetics</a></li>
+            <li><a href="#assignment">JS Assignment</a></li>
+            <li><a href="#arrays" style="pointer-events: none">JS Arrays</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="content">
+        <section id="introduction">
+          <h2>JavaScript Introduction</h2>
+          <h3>Javascript Can Change HTML Content</h3>
+          <p class="p1">One of many JavaScript HTML methods is <code class="code1">getElementById()</code>.</p>
+          <p class="p1">The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+          <!-- box-code 1-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2">document.getelementById (<span>"demo"</span>).innerHTML = <span>"Hello JavaScript"</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html" target="_blank">Try it Yourself </a></button>
+          </div>
+          <!-- info-box -->
+          <div class="box-info">
+            <p class="info">JavaScript accepts both double and single quotes:</p>
+          </div>
+          <!-- box-code 2-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2">document.getelementById (<span>'demo'</span>).innerHTML = <span>'Hello JavaScript'</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes" target="_blank">Try it Yourself </a></button>
+          </div>
+          <!-- Section 2 Js Introduction -->
+          <h3>Javascript Can Change HTML Styles(CSS)</h3>
+          <p class="p1">Changing the style of an HTML element, is a variant of changing an HTML Attribute:</p>
+          <!-- box-code 2-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2">document.getelementById (<span>'demo'</span>).style.fontSize = <span>"35px";</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank">Try it Yourself </a></button>
+          </div>
+          <!-- Section 3 JS Introduction -->
+          <h3>Javascript Can Hide HTML Elements</h3>
+          <p class="p1">Hiding HTML elements can be done by changing the <code class="code1">display</code> style:</p>
+          <!-- box-code 3-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2">document.getelementById (<span>'demo'</span>).style.display = <span>"none";</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide" target="_blank">Try it Yourself </a></button>
+          </div>
+          <!-- Section 4 JS Introduction -->
+          <h3>Javascript Can Show HTML Elements</h3>
+          <p class="p1">Showing hidden HTML elements can also be done by changing the <code class="code1">display</code> style:</p>
+          <!-- box-code 4-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2">document.getelementById (<span>'demo'</span>).style.display = <span>"block";</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show" target="_blank">Try it Yourself </a></button>
+          </div>
+
+          <!-- info-box -->
+          <div class="box-info">
+            <p class="info">
+              Did You Know? <br />
+              JavaScript and Java are completely different languages, both in concept and design. <br />
+              JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997. <br />
+              ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+            </p>
+          </div>
+        </section>
+
+        <section id="syntax">
+          <h2>JavaScript Syntax</h2>
+          <h3>JavaScript Values</h3>
+          <p class="p1">The JavaScript syntax defines two types of values:</p>
+          <ul class="p1">
+            <li class="values">Fixed values</li>
+            <li class="values">Variable values</li>
+          </ul>
+          <p class="p1">Fixed values are called <strong>Literals.</strong></p>
+          <p class="p1">Variable values are called <strong>Variables.</strong></p>
+          <!-- js section 2 -->
+          <h3>JavaScript Literals</h3>
+          <p class="p1">The two most important syntax rules for fixed values are:</p>
+          <p class="p1">1.<strong>Numbers</strong> are written with or without decimals:</p>
+          <!-- box-code 2-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2"><span>10.50</span><br /><br /><br /><span>1001</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes" target="_blank">Try it Yourself </a></button>
+          </div>
+          <p class="p1">2.<strong>Strings</strong> are text, written within double or single quotes:</p>
+          <!-- box-code 2-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2"><span>"John Doe"</span><br /><br /><br /><span>'John Doe'</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes" target="_blank">Try it Yourself </a></button>
+          </div>
+        </section>
+
+        <section id="variables">
+          <h2>JavaScript Variables</h2>
+          <p class="p1">In a programming language, variables are used to store data values.</p>
+          <p class="p1">JavaScript uses the keywords <code class="code1">var</code>, <code class="code1">let</code>, and <code class="code1">const</code> to declare variables.</p>
+          <p class="p1">An <strong>equal sign</strong> is used to <strong>assign values</strong> to variables.</p>
+          <p class="p1">In this example, x is defined as a variable. Then, x is assigned (given) the value 6:</p>
+          <!-- box-code 2-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2"><span>let x;</span><br /><span>x = 6;</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_variables" target="_blank">Try it Yourself </a></button>
+          </div>
+        </section>
+
+        <section id="comments">
+          <h2>JavaScript Comments</h2>
+          <p class="p1">Not all JavaScript statements are "executed".</p>
+          <p class="p1">Code after double slashes <code class="code1">//</code> or between <code class="code1">/*</code> and <code class="code1">*/</code> is treated as a <strong>comment.</strong></p>
+          <p class="p1">Comments are ignored, and will not be executed:</p>
+          <!-- box-code 3-->
+          <div class="box">
+            <p>Example</p>
+            <div class="box-code">
+              <code class="code2"><span style="color: blue">let</span><span> x;</span> <span style="color: green">// I will be executed</span> <br /><br /><span style="color: green">// x = 6; I will NOT be executed</span></code>
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_comments" target="_blank">Try it Yourself </a></button>
+          </div>
+        </section>
+
+        <section id="operators">
+          <h2>JavaScript Operator</h2>
+          <!-- info-box -->
+          <div class="box-info">
+            <p class="info">Javascript operators are used to perform different types of mathematical and logical computations.</p>
+            <p class="info" style="font-size: 1.4rem">Example</p>
+            <p class="info">The <strong>Assignment Operator</strong> <span style="color: blue; font-size: 1.5rem; font-weight: bolder">=</span> assigns values</p>
+            <p class="info">The <strong>Addition Operator</strong> <span style="color: blue; font-size: 1.5rem; font-weight: bolder">+</span> adds values</p>
+            <p class="info">The <strong>Multiplication Operator</strong> <span style="color: blue; font-size: 1.5rem; font-weight: bolder">*</span> multiplies values</p>
+            <p class="info">The <strong>Comparison Operator</strong> <span style="color: blue; font-size: 1.5rem; font-weight: bolder">+</span> compares values</p>
+          </div>
+          <!-- Javascript assignment -->
+          <h3>JavaScript Assignment</h3>
+          <p class="info" style="margin-top: 20px">The <strong>Assignment Operator</strong> <code class="code1">(=)</code> assigns a value to a variable:</p>
+          <!-- box-code 4-->
+          <div class="box">
+            <p>Assignment Example</p>
+            <div class="box-code">
+              <code class="code2"
+                ><span style="color: green">// Assign the value 5 to x</span><br /><span>let x = 5;</span><br /><span style="color: green">// Assign the value 2 to y</span> <br />
+                <span style="color: brown">let y = 2;</span> <br />
+                <span style="color: green">// Assign the value x + y to z:</span> <br />
+                <span style="color: brown"> let z = x + y;</span></code
+              >
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_oper" target="_blank">Try it Yourself </a></button>
+          </div>
+        </section>
+
+        <section id="arithmetics">
+          <h2>JavaScript Arithmetics Operator</h2>
+          <p class="p1"><strong>Arithmetic Operators</strong> are used to perform arithmetic on numbers:</p>
+          <!-- box-code 4-->
+          <div class="box">
+            <p>Arithmetic Operator Example</p>
+            <div class="box-code">
+              <code class="code2" style="color: brown"
+                >let a = 3; <br />
+                let x = (100 + 50) * a;</code
+              >
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_arithmetic_expressions" target="_blank">Try it Yourself </a></button>
+          </div>
+        </section>
+
+        <section id="assignment">
+          <h2>JavaScript Assignment Operator</h2>
+          <p class="p1">Assignment operators assign values to JavaScript variables.</p>
+          <p class="p1">The <strong>Addition Assignment Operator</strong> <code class="code1">(+=)</code> adds a value to a variable.</p>
+          <!-- box-code 5-->
+          <div class="box">
+            <p>Assignment</p>
+            <div class="box-code">
+              <code class="code2" style="color: brown"
+                >let x = 10; <br />
+                x += 5;</code
+              >
+            </div>
+            <button class="button"><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_arithmetic_expressions" target="_blank">Try it Yourself </a></button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
